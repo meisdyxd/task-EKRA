@@ -31,6 +31,7 @@ int main() {
 	std::cout << "reorderList" << std::endl;
 	printElements(head);
 	clearMemory(head);
+	std::cin.get();
 }
 
 template< typename T>
