@@ -23,7 +23,7 @@ void clearMemory(ListNode<T>*& head);
 
 int main() {
 	ListNode<int>* head = nullptr;
-	for (int i = 0; i < 10; i++) {
+	for (int i = 0; i < 8; i++) {
 		addElement(head, i);
 	}
 	printElements(head);
@@ -67,6 +67,7 @@ void addElement(ListNode<T>*& head, T value) {
 template<typename T>
 void printElements(ListNode<T>* head) {
 	if (head == nullptr) {
+		std::cout << "List is empty" << std::endl;
 		return;
 	}
 	ListNode<T>* t = head;
